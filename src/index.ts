@@ -12,7 +12,8 @@ import {
 import { ModuleMetadata, Provider } from "@nestjs/common/interfaces";
 import express from "express";
 import pinoHttp from "pino-http";
-import pino, { LoggerOptions, DestinationStream } from "pino";
+import { LoggerOptions, DestinationStream } from "pino";
+import * as pino from "pino";
 import { getValue, setValue, middleware as ctxMiddleware } from "express-ctx";
 
 type PassedLogger = { logger: pino.Logger };
